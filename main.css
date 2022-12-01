@@ -31,7 +31,7 @@ body {
     height: 60px;
     padding: 0 30px;
     flex: 1.5rem;
-    background-color: #0652c0;
+    background-color: #0f69e7;
     color: var(--color-white);;
 }
 
@@ -55,7 +55,11 @@ body {
 
 .body {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     height: 300px;
+    padding: 8px 10px;
+    overflow-y: auto;
 }
 
 .chat-input {
@@ -80,9 +84,25 @@ body {
 
 .send {
     flex: 1;
+    cursor: pointer;
 }
 
 .send-img {
     max-width: 25px;
 }
 
+.user-message, 
+.chatbot-message {
+    width: max-content;;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px 10px 3px 10px;
+    background-color: rgb(4, 196, 90);
+}
+
+.chatbot-message {
+    align-self: flex-start;
+    border-radius: 10px 10px 10px 3px;
+    background-color: #0f69e7;
+    color: var(--color-white);
+}
